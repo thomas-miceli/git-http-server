@@ -19,9 +19,9 @@ class GitHTTPServer
      * The structure of the array must be like this
      * $whoCanRead = [
      *     'user1' => 'password1',
-     *     'user2" => 'password2",
+     *     'user2' => 'password2',
      *      // etc ...
-     * }
+     * ]
      */
     private array $whoCanRead;
 
@@ -31,9 +31,9 @@ class GitHTTPServer
      * The structure of the array must be like this
      * $whoCanWrite = [
      *     'user1' => 'password1',
-     *     'user2" => 'password2",
+     *     'user2' => 'password2',
      *      // etc ...
-     * }
+     * ]
      */
     private array $whoCanWrite;
 
@@ -135,7 +135,7 @@ class GitHTTPServer
     }
 
     /**
-     * Run the wrapper by retrieving request parameters and headers and checking for authentication
+     * Run the wrapper by retrieving request parameters and headers and checking for authentication.
      *
      * If the repository is 'public' :
      *      * everybody    can fetch the remote repository
@@ -163,7 +163,7 @@ class GitHTTPServer
     }
 
     /**
-     * Checks if the user entered his credentials and verify if he can read the remote repository
+     * Checks if the user entered his credentials and verify if he can read the remote repository.
      *
      * @param  string|null $user
      * @param  string|null $password
@@ -185,7 +185,7 @@ class GitHTTPServer
     }
 
     /**
-     * Checks if the user entered his credentials and verify if he can write to the remote repository
+     * Checks if the user entered his credentials and verify if he can write to the remote repository.
      *
      * @param  string|null $user
      * @param  string|null $password
@@ -207,7 +207,7 @@ class GitHTTPServer
     }
 
     /**
-     * Returns the Symfony HTTPFoundation Response
+     * Returns the Symfony HTTPFoundation Response.
      *
      * @return Response
      */
