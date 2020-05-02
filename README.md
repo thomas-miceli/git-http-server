@@ -37,3 +37,7 @@ The code above must be executed when the following routes are requested by the c
 * `https://my.gitserver.org/my-repository.git/git-receive-pack`
 * `https://my.gitserver.org/my-repository.git/git-upload-pack`
 
+Then when the server is running, the repository will be accessible by HTTP requests
+```
+git clone https://my.gitserver.org/my-repository.git
+```
